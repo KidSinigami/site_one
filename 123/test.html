@@ -1,0 +1,30 @@
+<html><head>
+ </head>
+
+ <body>
+   <script>
+   function submit_ (log, pas)
+   {
+   if (log == 123 && pas == 123) return true;
+   else {alert ('ERROR'); return false}
+   }
+   </script>
+
+   <form method="" action="">
+   <input name="login"
+          value="login"
+          onfocus="if (this.value == 'login') this.value = ''     "
+          onblur=" if (this.value == ''     ) this.value = 'login'">
+
+   <input name="login_password"
+          value="password"
+          onfocus="if (this.value == 'password') this.value = '',         this.type = 'password'"
+          onblur=" if (this.value == ''        ) this.value = 'password', this.type = 'text'    ">
+
+   <input value="Enter"
+          type="submit"
+          onclick="return submit_ (this.form.login.value, this.form.login_password.value)">
+   </form>
+ </body>
+</center>
+</html>
